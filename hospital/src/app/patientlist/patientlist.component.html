@@ -1,0 +1,27 @@
+<nav class="navbar">
+  <input class="form-control" type="text" name="id" [(ngModel)]="id" (ngModelChange)="Search()"
+  placeholder="enter id">
+</nav>
+<div class="container-fluid">
+  
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th >name</th>
+        <th >dateofvisited</th>
+        <th >doctorvisited</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let patient of patients">
+        
+        <td>{{patient.id}}</td>
+        <td>{{patient.name}}</td>
+        <td>{{patient.dateofvisited}}</td>
+        <td>{{patient.doctorvisited}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+  </div>

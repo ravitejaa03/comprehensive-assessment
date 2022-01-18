@@ -1,0 +1,28 @@
+<h1 class="text-center"> Hospital</h1>
+
+    <div class="container">
+        <div class="nav-tab">
+      <ul class="nav nav-tab" >
+        <li class="nav-item"role="presentation" class="nav-link active" aria-current="page" href="#"id="home"(click)="tabchange('home')">Home</li>
+      <li class="nav-item"  role="presentation" class="nav-link active" aria-current="page" href="#"id="Patient" (click)="tabchange('Patient')">PatientInfo</li>
+      <li class="nav-item"role="presentation" class="nav-link active" aria-current="page" href="#"id="Doctor"(click)="tabchange('Doctor')">ShowDoctorinfo</li>
+
+      </ul>
+
+<div class="content">
+    <div class="content-value" *ngIf="id==='home'" class="text-center"><h1>WELCOME TO HOSPITAL
+     <div class="container"><img src="https://th.bing.com/th/id/OIP.m4N2Jfc3hRWdWj-oX8K_AQHaFj?w=238&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" class="img-fluid" alt=""></div> 
+    </h1></div>
+    <div class="content-value" *ngIf="id==='Patient'"><app-patientlist></app-patientlist></div>
+    <div class="content-value"*ngIf="id==='Doctor'"><app-doctorlist></app-doctorlist></div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+    </div> 
